@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 17-09-2022 a las 00:33:48
+-- Tiempo de generación: 17-09-2022 a las 02:48:41
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 8.1.6
 
@@ -66,6 +66,13 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
+-- Volcado de datos para la tabla `users`
+--
+
+INSERT INTO `users` (`idusers`, `users_name`, `users_last_name`, `users_phone`, `users_address`, `users_country`, `users_date_birth`, `users_profile_picture`, `users_pokemon_url`, `users_position`, `idroles`, `users_status`, `users_quantity`, `users_email`, `users_password`, `users_code`) VALUES
+(1, 'Fabio', 'Torres', 3006018171, 'mi direccion fabio torres', 'Colombia', '1997-07-16', 'http://127.0.0.1:8000/assets/img/6324f6ef894a2/IMG-1dea03b1de485bd9384a36a3228f72cc.jpg', 'https://pokeapi.co/api/v2/pokemon/1/', 'GERENTE', 1, 'ACTIVO', 0, 'fabio@gmail.com', 0x6130313631303232386665393938663531356137326464373330323934643837, '6324f6ef894a2');
+
+--
 -- Índices para tablas volcadas
 --
 
@@ -97,7 +104,7 @@ ALTER TABLE `roles`
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `idusers` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idusers` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- Restricciones para tablas volcadas
